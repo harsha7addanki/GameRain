@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="src/androidTest/java"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="build/intermediates/aar_main_jar/debug/classes.jar"/>
+	<classpathentry kind="lib" path="build/intermediates/compile_library_classes_jar/debug/classes.jar"/>
+	<classpathentry kind="lib" path="build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar"/>
+	<classpathentry kind="lib" path="build/intermediates/merged_java_res/debug/out.jar"/>
+	<classpathentry kind="lib" path="build/intermediates/runtime_library_classes_jar/debug/classes.jar"/>
+	<classpathentry kind="output" path="build/intermediates/javac/debug/classes"/>
+</classpath>
