@@ -6,11 +6,6 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-/**
- * GRGame(Context,GRCode)
- * Context: The App Context
- * GRCode: Code For Game
-**/
 public class GRGame extends SurfaceView implements SurfaceHolder.Callback {
     private GRThread thread;
     private GRCode code;
