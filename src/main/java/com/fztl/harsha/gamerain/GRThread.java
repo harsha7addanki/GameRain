@@ -7,7 +7,7 @@ public class GRThread extends Thread {
     private SurfaceHolder surfaceHolder;
     private GRGame grGame;
     private boolean running;
-    public static Canvas canvas;
+    public static Canvas tcanvas;
 
     public GRThread(SurfaceHolder surfaceHolder, GRGame grGame) {
 
@@ -19,18 +19,18 @@ public class GRThread extends Thread {
     @Override
     public void run() {
         while (running) {
-            canvas = null;
+            tcanvas = null;
 
             try {
-                canvas = this.surfaceHolder.lockCanvas();
+                tcanvas = this.surfaceHolder.lockCanvas();
                 synchronized(surfaceHolder) {
                     this.grGame.update();
-                    this.grGame.draw(canvas);
+                    this.grGame.draw(tcanvas);
                 }
             } catch (Exception e) {} finally {
-                if (canvas != null) {
+                if (tcanvas != null) {
                     try {
-                        surfaceHolder.unlockCanvasAndPost(canvas);
+                        surfaceHolder.unlockCanvasAndPost(tcanvas);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -40,5 +40,9 @@ public class GRThread extends Thread {
     }
     public void setRunning(boolean isRunning) {
         running = isRunning;
+    }
+
+    public static void setTcanvas(Canvas tcanvas) {
+        GRThread.tcanvas = tcanvas;
     }
 }
