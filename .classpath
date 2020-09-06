@@ -5,6 +5,11 @@
 	<classpathentry kind="src" path="src/androidTest/java"/>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry excluding="com/" kind="src" path="src/release/java"/>
+	<classpathentry excluding="fztl/" kind="src" path="src/release/java/com"/>
+	<classpathentry excluding="harsha/" kind="src" path="src/release/java/com/fztl"/>
+	<classpathentry excluding="gamerain/" kind="src" path="src/release/java/com/fztl/harsha"/>
+	<classpathentry kind="src" path="src/release/java/com/fztl/harsha/gamerain"/>
 	<classpathentry kind="lib" path="build/intermediates/aar_main_jar/debug/classes.jar"/>
 	<classpathentry kind="lib" path="build/intermediates/compile_library_classes_jar/debug/classes.jar"/>
 	<classpathentry kind="lib" path="build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar"/>

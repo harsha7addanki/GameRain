@@ -52,7 +52,7 @@ public class GRGame extends SurfaceView implements SurfaceHolder.Callback {
     public boolean onFilterTouchEventForSecurity(MotionEvent event) {
         //while(true){
             if(super.onFilterTouchEventForSecurity(event)){
-                this.code.onTouch(super.onFilterTouchEventForSecurity(event));
+                this.code.onTouch(event);
             }
             return super.onFilterTouchEventForSecurity(event);
         //}
@@ -63,5 +63,9 @@ public class GRGame extends SurfaceView implements SurfaceHolder.Callback {
         if (canvas != null) {
             this.code.run(canvas);
         }
+    }
+
+    public GRThread getThread() {
+        return thread;
     }
 }
