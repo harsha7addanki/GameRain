@@ -48,7 +48,7 @@ public class GRGame extends SurfaceView implements SurfaceHolder.Callback {
     public boolean onFilterTouchEventForSecurity(MotionEvent event) {
         //while(true){
             if(super.onFilterTouchEventForSecurity(event)){
-                this.code.onTouch(super.onFilterTouchEventForSecurity(event));
+                this.code.onTouch(event);
             }
             return super.onFilterTouchEventForSecurity(event);
         //}
