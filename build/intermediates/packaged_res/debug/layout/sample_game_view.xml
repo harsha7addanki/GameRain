@@ -6,6 +6,8 @@
     <com.fztl.harsha.gamerain.GameView
         android:id="@+id/MyGameView"
         android:layout_width="261dp"
-        android:layout_height="279dp" />
+        android:layout_height="279dp"
+        android:rotationX="28"
+        android:rotationY="43" />
 
 </FrameLayout>

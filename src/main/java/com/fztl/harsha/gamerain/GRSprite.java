@@ -1,5 +1,6 @@
 package com.fztl.harsha.gamerain;
 
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
 public class GRSprite {
