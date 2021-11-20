@@ -4,8 +4,8 @@ import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
 public class GRThread extends Thread {
-    private SurfaceHolder surfaceHolder;
-    private GRGame grGame;
+    private final SurfaceHolder surfaceHolder;
+    private final GRGame grGame;
     private boolean running;
     public static Canvas tcanvas;
 
@@ -27,7 +27,7 @@ public class GRThread extends Thread {
                     this.grGame.update();
                     this.grGame.draw(tcanvas);
                 }
-            } catch (Exception e) {} finally {
+            } catch (Exception ignored) {} finally {
                 if (tcanvas != null) {
                     try {
                         surfaceHolder.unlockCanvasAndPost(tcanvas);
@@ -42,7 +42,4 @@ public class GRThread extends Thread {
         running = isRunning;
     }
 
-    public static void setTcanvas(Canvas tcanvas) {
-        GRThread.tcanvas = tcanvas;
-    }
 }

@@ -4,9 +4,9 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 
 public class GRSprite {
-    private Bitmap image;
-    private float left;
-    private float top;
+    private final Bitmap image;
+    private final float left;
+    private final float top;
 
     public GRSprite(Bitmap image,float left,float top){
         this.image = image;
