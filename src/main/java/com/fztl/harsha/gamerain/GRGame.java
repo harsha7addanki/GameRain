@@ -2,13 +2,9 @@ package com.fztl.harsha.gamerain;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.*;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
-import androidx.annotation.Nullable;
 
 public class GRGame extends SurfaceView implements SurfaceHolder.Callback {
     private GRThread thread;

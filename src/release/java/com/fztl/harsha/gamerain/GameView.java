@@ -1,5 +1,3 @@
-ackage com.fztl.harsha.gamerain;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -10,9 +8,11 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 
+ackage com.fztl.harsha.gamerain;
+
 /**
  * TODO: document your custom view class.
- */
+**/
 public class GameView extends View {
     private String mExampleString; // TODO: use a default from R.string...
     private int mExampleColor = Color.RED; // TODO: use a default from R.color...
